@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT THIS APPLICATION"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/imageStudent"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/me"
+            android:scaleType="centerCrop"
+            android:contentDescription="Student Picture"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application: Electricity Bill Calculator\nCourse: ICT602 Mobile Technology and Development\n\nStudent Information\nFull Name: NUR FARRAIN BINTI ZAHID\nStudent ID: 2024242716\nCourse Code and Name: ICT602 - Mobile Technology and Development\n\n© 2026 Electricity Bill Calculator"
+            android:textSize="16sp"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application Website (GitHub)"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://github.com/your-username/electricity-bill-calculator"
+            android:textColor="#1565C0"
+            android:autoLink="web"
+            android:paddingBottom="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOW TO USE THE APP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Select the electricity bill month.\n\n2. Enter the number of electricity units used. The value must be between 1 and 1000 kWh.\n\n3. Move the rebate slider to select a rebate from 0% to 5%.\n\n4. Press CALCULATE BILL to display total charges and final cost.\n\n5. Press SAVE BILL TO DATABASE to store the bill in the phone's local SQLite database.\n\n6. Press VIEW BILL HISTORY to see saved bills. The list displays the month and final cost only.\n\n7. Select a bill in the history list to view its details. You can update or delete the bill on the detail page.\n\n8. Return to the main page using the Back button."
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:paddingTop="8dp" />
+    </LinearLayout>
+</ScrollView>

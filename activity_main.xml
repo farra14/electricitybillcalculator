@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MONTHLY ELECTRICITY BILL"
+            android:textColor="@color/purple_700"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the month"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity units used (1 - 1000 kWh)"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editUnits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter units used"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate percentage (0% - 5%)"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate: 0%"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:paddingTop="6dp" />
+
+        <SeekBar
+            android:id="@+id/seekRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:progress="0"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE BILL" />
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Charges: RM 0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="18dp" />
+
+        <TextView
+            android:id="@+id/textFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Cost: RM 0.00"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE BILL TO DATABASE" />
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW BILL HISTORY" />
+
+        <Button
+            android:id="@+id/buttonAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT / HOW TO USE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate: first 200 kWh = RM0.218/kWh; next 100 = RM0.334/kWh; next 300 = RM0.516/kWh; final 300 = RM0.546/kWh."
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:paddingTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
